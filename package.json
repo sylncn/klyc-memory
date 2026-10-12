@@ -1,0 +1,25 @@
+{
+  "name": "klyc-memory",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "AI 记忆连续性插件：把昆仑瑶池记忆注入每轮对话，AI 不主动也不失忆",
+  "license": "MIT",
+  "openclaw": {
+    "extensions": [
+      "./dist/index.js"
+    ],
+    "compat": {
+      "pluginApi": ">=2026.3.24-beta.2",
+      "minGatewayVersion": "2026.3.24-beta.2"
+    },
+    "build": {
+      "openclawVersion": "2026.9.9",
+      "pluginSdkVersion": "2026.9.9"
+    }
+  },
+  "files": [
+    "dist",
+    "openclaw.plugin.json",
+    "README.md"
+  ]
+}
