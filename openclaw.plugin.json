@@ -1,0 +1,32 @@
+{
+  "id": "klyc-memory",
+  "name": "Kunlun Yaochi Memory",
+  "description": "AI 记忆连续性：每轮对话自动注入昆仑瑶池（kunlunyaochi.com）的自己记忆，AI 不主动也不失忆。",
+  "categories": ["memory"],
+  "kind": "memory",
+  "activation": {
+    "onStartup": true
+  },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "endpoint": {
+        "type": "string",
+        "description": "昆仑瑶池 API 端点（默认 https://kunlunyaochi.com）"
+      },
+      "keyFile": {
+        "type": "string",
+        "description": "api_key 读取路径（默认 /root/.klyc-pmm/api_key）"
+      },
+      "maxResults": {
+        "type": "integer",
+        "description": "每轮注入最大记忆条数（默认 5）"
+      },
+      "queryHint": {
+        "type": "string",
+        "description": "检索锚词（默认 记忆）"
+      }
+    }
+  }
+}
